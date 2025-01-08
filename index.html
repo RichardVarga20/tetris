@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris feladat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-info">
+            <h1>Tetris</h1>
+            <div class="score">Pontszám: <span id="score">0</span></div>
+            <div class="level">Szint: <span id="level">1</span></div>
+            <div class="lines">Sorok: <span id="lines">0</span></div>
+            <button id="start-button">Játék indítása</button>
+        </div>
+        <canvas id="tetris" width="240" height="400"></canvas>
+        <div class="next-piece">
+            <h3>Következő</h3>
+            <canvas id="next-piece" width="80" height="80"></canvas>
+        </div>
+    </div>
+    <script src="tetris.js"></script>
+</body>
+</html>
